@@ -1,0 +1,14 @@
+{
+    "name": "My Project Container",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "app",
+    "workspaceFolder": "/workspace",
+    "extensions": [
+      "ms-azuretools.vscode-docker",
+      "dbaeumer.vscode-eslint"
+    ],
+    "settings": {
+      "terminal.integrated.shell.linux": "/bin/bash"
+    }
+  }
+  

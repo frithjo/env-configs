@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    volumes:
+      - env_configs:/app/config
+volumes:
+  env_configs:
+    external: true
+
+version: '3.8'
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    secrets:
+      - api_key
+secrets:
+  api_key:
+    external: true
